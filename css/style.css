@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Geologica';
+    src: url(assets\fonts\Geologica\Geologica-VariableFont_CRSV,SHRP,slnt,wght.ttf);
+}
+
+* {
+    font-family: 'Geologica', sans-serif;
+}
+
+#qrcode {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+body {
+/* https://grabient.com/HQBg7AjANMEgnDcA2JAOALDCEBM6BmKCYXAVhBnjHxL2mDHi2AwLJnbKA?angle=270 */
+
+    background: linear-gradient(270deg, #180206 0.000%,
+                                        #270200 14.286%, 
+                                        #1f150a 28.571%, 
+                                        #082d1e 42.857%, 
+                                        #003829 57.143%, 
+                                        #0a2f1f 71.429%, 
+                                        #20190b 85.714%, 
+                                        #270400 100.000%);
+    /*color: rgba(49,8,31);*/
+    color: #DCEED1;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    margin: 12px;
+}
+
+p {
+    background: rgba(220, 224, 217, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+    max-width: 300px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+input {
+   /* background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, 
+                                                                         #FDB931 8%, 
+                                                                         #9f7928 30%, 
+                                                                         #8A6E2F 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, 
+                                                                     #FFFFAC 8%, 
+                                                                     #D1B464 25%, 
+                                                                     #5d4a1f 62.5%, 
+                                                                     #5d4a1f 100%);*/
+    background: radial-gradient(ellipse farthest-corner at right bottom, #fecc37 0%, 
+                                                                         #fda531 8%, 
+                                                                         #9f7528 30%, 
+                                                                         #8a642f 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, 
+                                                                     #ffeaac 8%, 
+                                                                     #d1a764 25%, 
+                                                                     #5d431f 62.5%, 
+                                                                     #5d501f 100%);
+    background-size: 200% auto;
+    margin: 10px;
+    padding: 15px 45px;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .5s;
+    color: white;
+    display: block;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 5px #9c8c8c;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+input:hover {
+    background-position: right center;
+}
+
+#businessCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+blockquote {
+    max-width: 500px;
+}
+
+figcaption {
+    float:inline-end;
+    margin-right: 100px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    max-width: 600px;
+}
+
+#footerLogo {
+    max-width: 100px;
+    max-height: 100px;
+}
