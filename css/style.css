@@ -42,25 +42,34 @@ div {
 p {
     background: rgba(220, 224, 217, 0.2);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    padding: 20px;
+    font-size: 18px;
     margin: 10px;
-    max-width: 300px;
+    line-height: 1.6;
+    max-height: 600px;
+    max-width: 600px;
 }
 
-h1, h2 {
-    text-align: center;
+li {
+    font-size: 18px;
 }
 
 h1 {
+    text-align: center;
     margin: 0;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight:bold;
+    text-decoration: underline;
 }
 
 .headerTitle {
     text-align: center;
-    width: 40%;
+    width: 20%;
     margin: 0;
     color: #Fecc37;
     padding: 0px 16px;
@@ -73,15 +82,24 @@ h1 {
 }
 
 blockquote {
-    font-size: 36px;
+    font-size: 44px;
     font-weight: bold;
 }
-.quote {
+.quoteRow {
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+.quoteRow > h1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style: oblique;
 }
 
 .catchQuote {
@@ -98,7 +116,7 @@ blockquote {
     justify-content:flex-end;
     align-items: center;
     margin: 0;
-    width: 40%;
+    width: 24%;
 }
 
 nav {
@@ -111,24 +129,17 @@ nav {
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
-    width: 100%;
+    width: 99%;
     border-bottom: #DCEED1;
-    border-width:2px;
-    border-style:groove;
-    padding: 0px 8px;
+    border-width:1px;
+    border-right: none;
+    border-left: none;
+    border-style:solid;
     z-index: 1;
+       box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.5);
 }
 
 input {
-   /* background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, 
-                                                                         #FDB931 8%, 
-                                                                         #9f7928 30%, 
-                                                                         #8A6E2F 40%, transparent 80%),
-                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, 
-                                                                     #FFFFAC 8%, 
-                                                                     #D1B464 25%, 
-                                                                     #5d4a1f 62.5%, 
-                                                                     #5d4a1f 100%);*/
     background: radial-gradient(ellipse farthest-corner at right bottom, #fecc37 0%, 
                                                                          #fda531 8%, 
                                                                          #9f7528 30%, 
@@ -157,13 +168,6 @@ input:hover {
     background-position: right center;
 }
 
-.rowLine {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 100%;
-}
-
 #businessCard {
     display: flex;
     flex-direction: row;
@@ -175,20 +179,16 @@ blockquote {
     max-width: 500px;
 }
 
-figcaption {
-    float:inline-end;
-    margin-right: 100px;
+.caption {
+    font-style: italic;
+    padding-bottom: 40px;
+    padding-right: 120px;
+    align-self: flex-end;
+    font-weight: 500;
+    text-decoration: none;
 }
 
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-    align-items: center;
-    max-width: 600px;
-}
-
-#footerLogo {
+#meepleLogo {
     max-width: 100px;
     max-height: 100px;
 }
@@ -198,8 +198,16 @@ li {
     margin: 8px;
 }
 
+tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 td {
-    padding: 4px;
+    padding: 24px;
+    font-size: 24px;
     text-align: center;
 }   
 
@@ -207,42 +215,105 @@ form:last-child {
     margin-right: 16px;
 }
 
-.jobRow {
+.jobRow, .hobbyRow, .jobSummary, .quoteRow, .introductionRow {
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: stretch;
     justify-content: center;
     width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.jobDescription {
+.jobRow:nth-child(odd) > .jobImage, 
+.hobbyRow:nth-child(odd) > .hobbyImage,
+.jobRow:nth-child(even) > .jobDescription,
+.hobbyRow:nth-child(even) > .hobbyDescription, 
+.quoteRow > .catchQuote, 
+.introductionRow > .profileImage {
+    border-width: 1px 1px 1px 0;
+}
+
+.jobRow:nth-child(odd) > .jobImage, 
+.hobbyRow:nth-child(odd) > .hobbyImage,
+.jobRow:nth-child(even) > .jobDescription,
+.hobbyRow:nth-child(even) > .hobbyDescription, 
+.quoteRow > h1,
+.introductionRow > .introduction  {
+    border-width: 1px 0 1px 1px;
+}
+
+.jobDescription, .hobbyDescription, .jobSkills, .introduction, .quoteRow > h1 {
     width: 50%;
     background-color:rgba(0,0,0,0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+    border-style: inset;
+    border-color: #DCEED1;
 }
 
-.jobImage {
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.jobImage, .hobbyImage, .technicalProfile, .profileImage, .catchQuote {
     width: 50%;
     opacity: 80%;
     flex: 1 1 30%;
-    max-width: 750px;
-    max-height:750px;
+    max-width: 1000px;
+    max-height: 1000px;
+    min-width: 200px;
+    min-height: 200px;
     display: flex;
+    text-align: center;
     flex-direction: column;
     background-repeat: no-repeat; /* Prevents the image from tiling */
     background-size: cover;        /* Stretches the image to fill the screen */
     background-attachment: fixed;  /* Keeps background static during scroll */
-    
-}
-.buttonGroup {
-    background-size: 200% auto;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+    border-style: inset;
+    border-color: #DCEED1;
 }
 
-button {
-    color: white;
-    background-color: black;
+.profileImage {
+    width: 50%;
+    flex: 1 1 30%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-repeat: no-repeat; /* Prevents the image from tiling */
+    background-size: cover;        /* Stretches the image to fill the screen */
+    background-attachment: fixed;  /* Keeps background static during scroll */
+    min-width: 500px;
+    min-height: 500px;
+    max-width: 1000px;
+    max-height: 1000px;
 }
+
+
+.technicalProfile {
+    justify-content: center;
+    align-items: center;
+}
+
+.companies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 36px 0;
+}
+
+.companies > img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
