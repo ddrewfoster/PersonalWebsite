@@ -5,6 +5,11 @@
 
 * {
     font-family: 'Geologica', sans-serif;
+    --primary-color: #2B2118;
+    --secondary-color: #1E4A3B;
+    --highlight-color: #F6C453;
+    --text-color: #F4E8D0;
+    --contrast-color: #B7A99A;
 }
 
 #qrcode {
@@ -15,16 +20,9 @@
 body {
 /* https://grabient.com/HQBg7AjANMEgnDcA2JAOALDCEBM6BmKCYXAVhBnjHxL2mDHi2AwLJnbKA?angle=270 */
 
-    background: linear-gradient(270deg, #180206 0.000%,
-                                        #270200 14.286%, 
-                                        #1f150a 28.571%, 
-                                        #082d1e 42.857%, 
-                                        #003829 57.143%, 
-                                        #0a2f1f 71.429%, 
-                                        #20190b 85.714%, 
-                                        #270400 100.000%);
+    background: var(--primary-color);
     /*color: rgba(49,8,31);*/
-    color: #DCEED1;
+    color: var(--text-color);
     font-weight: 700;
     display: flex;
     flex-direction: column;
@@ -37,6 +35,17 @@ body {
 
 div {
     width: 100%;
+}
+
+a:link, a:visited {
+    color: var(--secondary-color);
+    text-decoration: none;
+
+}
+
+a:hover, a:active {
+    color: var(--highlight-color);
+    text-decoration: underline;
 }
 
 p {
@@ -64,14 +73,14 @@ h1 {
 
 h2 {
     font-weight:bold;
-    text-decoration: underline;
 }
 
 .headerTitle {
-    text-align: center;
+    text-align: left;
     width: 20%;
     margin: 0;
-    color: #Fecc37;
+    color: var(--secondary-color);
+    text-transform: uppercase;
     padding: 0px 16px;
     letter-spacing: 4px;
     text-underline-offset: 4px;
@@ -123,14 +132,14 @@ nav {
     position: sticky;
     top: 0;
     overflow: hidden;
-    background-color: #270200;
+    background-color: var(--secondary-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
     width: 99%;
-    border-bottom: #DCEED1;
+    border-bottom: var(--contrast-color);
     border-width:1px;
     border-right: none;
     border-left: none;
@@ -155,11 +164,11 @@ input {
     text-align: center;
     text-transform: uppercase;
     transition: .5s;
-    color: white;
+    color: var(--text-color);
     display: block;
     outline: none;
     border: none;
-    box-shadow: 0 0 5px #9c8c8c;
+    box-shadow: 0 0 5px var(--modal-color);
     font-weight: 700;
     cursor: pointer;
 }
@@ -215,7 +224,7 @@ form:last-child {
     margin-right: 16px;
 }
 
-.jobRow, .hobbyRow, .jobSummary, .quoteRow, .introductionRow {
+.jobRow, .aboutRow, .jobSummary, .quoteRow, .introductionRow {
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -226,34 +235,13 @@ form:last-child {
     margin-bottom: 10px;
 }
 
-.jobRow:nth-child(odd) > .jobImage, 
-.hobbyRow:nth-child(odd) > .hobbyImage,
-.jobRow:nth-child(even) > .jobDescription,
-.hobbyRow:nth-child(even) > .hobbyDescription, 
-.quoteRow > .catchQuote, 
-.introductionRow > .profileImage {
-    border-width: 1px 1px 1px 0;
-}
-
-.jobRow:nth-child(odd) > .jobImage, 
-.hobbyRow:nth-child(odd) > .hobbyImage,
-.jobRow:nth-child(even) > .jobDescription,
-.hobbyRow:nth-child(even) > .hobbyDescription, 
-.quoteRow > h1,
-.introductionRow > .introduction  {
-    border-width: 1px 0 1px 1px;
-}
-
-.jobDescription, .hobbyDescription, .jobSkills, .introduction, .quoteRow > h1 {
+.jobDescription, .aboutDescription, .jobSkills, .introduction, .quoteRow > h1 {
     width: 50%;
-    background-color:rgba(0,0,0,0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
-    border-style: inset;
-    border-color: #DCEED1;
 }
 
 .contactInfo {
@@ -263,7 +251,7 @@ form:last-child {
     align-items: center;
 }
 
-.jobImage, .hobbyImage, .technicalProfile, .profileImage, .catchQuote {
+.jobImage, .aboutImage, .technicalProfile, .profileImage, .catchQuote {
     width: 50%;
     opacity: 80%;
     flex: 1 1 30%;
@@ -278,8 +266,6 @@ form:last-child {
     background-size: cover;        /* Stretches the image to fill the screen */
     background-attachment: fixed;  /* Keeps background static during scroll */
     box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
-    border-style: inset;
-    border-color: #DCEED1;
 }
 
 .profileImage {
