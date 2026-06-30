@@ -114,7 +114,7 @@ a {
     font-family: var(--font-body);
     font-size: .75em;
     color: var(--text-secondary);
-    margin-top: 0.2vw;
+    margin-top: 0.2vh;
     height:auto;
     width: 100%;
     gap: 2vw;
@@ -129,14 +129,14 @@ blockquote {
     font-size: 1em;
     color: var(--text-secondary);
     font-weight: 700;
-    margin-top: 1vw;
-    margin-bottom: 4vw;
-    max-width: 24vw;
+    margin-top: 1vh;
+    margin-bottom: 4vh;
+    max-width: 64vw;
 }
 
 #arrow {
     width: 1vw;
-    height: 1vw;
+    height: 1vh;
     animation: bounce 2s infinite;
 }
 
@@ -175,11 +175,11 @@ line {
     gap: .5vw;
     font-size: 2em;
     width: 20%;
-    height: 2vw;
+    height: 2vh;
 }
 
 svg {
-    height: .1vw;
+    height: .1vh;
 }
 
 #about, #work {
@@ -187,7 +187,7 @@ svg {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 80%;
     height: auto;
 }
 
@@ -196,7 +196,7 @@ svg {
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: start;
     margin: 1vw;
     padding: 1vw;
@@ -214,31 +214,32 @@ svg {
 }
 
 #profile-picture {
-    height: 12vw;
-    width: 12vw;
+    height: 284px;
+    width: 284px;
     border-radius: 4vw;
 }
 
-#stats, #studies {
+#stats {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-content: center;
     margin: 0;
-    margin: .5vw .5vw;
-    padding: .5vw .5vw;
+    margin: .5vh .5vw;
+    padding: .5vh .5vw;
+    width: 90%;
 }
 
 #stats > div, #studies > div {
-    margin: .5vw 0vw 0vw .5vw;
-    padding: 1vw 1vw;
+    margin: .5vh 0vw 0vw .5vh;
+    padding: 1vh 1vw;
     background-color: var(--secondary);
     color: var(--accent);
     text-align: center;
     border-radius: 1vw;
-    height: 1.5vw;
-    width: 6vw;
+    height: 4vh;
+    width: 8vw;
     text-transform: uppercase;
     border-color: var(--secondary);
     border-width: 1px;
@@ -247,6 +248,10 @@ svg {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#stats > div {
+    width: 12vw;
 }
 
 #stats > div > h3, #stats > div > p, #studies > div > h3, #studes > div > p {
@@ -271,8 +276,8 @@ svg {
 }
 
 .carouselItem {
-    height: 20vw;
-    width: 20vw;
+    height: 284px;
+    width: 284px;
 }
 
 #carouselNavigation {
@@ -289,18 +294,18 @@ svg {
 
 #left-navigation {
     width: 1vw;
-    height: 1vw;
+    height: 1vh;
     rotate: 90deg;
     margin-right: 1vw;
-    margin-top: .25vw;
+    margin-top: .25vh;
     animation: bounce 2s infinite;
 }
 
 #right-navigation {
     width: 1vw;
-    height: 1vw;
+    height: 1vh;
     rotate: -90deg;
-    margin-top: .1vw;
+    margin-top: .1vh;
     margin-left: 1vw;
     animation: bounce 2s infinite;
 }
@@ -308,8 +313,8 @@ svg {
 #title, .sectionTitle {
     font-family: var(--font-heading);
     font-size: 4em;
-    margin-top: .1vw;
-    margin-bottom: 1vw;
+    margin-top: .1vh;
+    margin-bottom: 1vh;
     color: var(--text--primary);
     width: 40%;
     text-shadow: 16px 16px 32px rgba(0, 0, 0, 0.5);
@@ -320,21 +325,49 @@ svg {
     width: 100%;
 }
 
-#description, #notes {
-    font-family: var(--font-body);
-    font-size: 18px;
-    color: var(--text-color);
-    margin-bottom: 20px;
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;    
+    font-size: .75em;
+    text-overflow: clip;
+    height: 4vh;
 }
 
-#snippets, #terminal, #techstack, #metrics {
-    font-family: var(--font-code);
-    font-size: 16px;
-    color: var(--text--primary);
-    background: rgba(220, 224, 217, 0.2);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
+.title > h3 {
+    margin-top: 1em;
+}
+
+#studies {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin: .5vh .5vw;
+    padding: .5vh .5vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+}
+
+#studies > div {
+    width: 40%;
+    height: fit-content;
+    max-height: 16vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+}
+
+#studies > div > div > p {
+        min-width: 3vw;
+        max-width: 3.5vw;
+}
+
+#studies > div > p {
+    font-size: .7em;
 }
