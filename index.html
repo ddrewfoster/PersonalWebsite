@@ -23,13 +23,13 @@
             <img id="hero-image" src="css\assets\images\hero-bg.jpg" alt="Hero Image">
         <h3>Portfolio Of</h3>
         <h1 id="title"><b>Drew Foster</b></h1>
-        <div id="separator">
-            <svg id="left-separator">
-                <line x1="0" y1="0" x2="180" y2="0" />
+        <div class="separator">
+            <svg class="individual-separator">
+                <line x1="0" y1="0" x2="240" y2="0" />
             </svg>
             &#128965;
             <svg id="right-separator-svg">
-                <line x1="0" y1="0" x2="180" y2="0" />
+                <line x1="0" y1="0" x2="240" y2="0" />
             </svg>
         </div>
         <div id="subtitle"> 
@@ -37,7 +37,11 @@
             &#11044;
             <h2>Solutions Architect</h2>
         </div>
-        <quote id="quote">"Passion has little to do with euphoria and everything to do with patience. It is not about feeling good. It is about endurance." - House of Leaves Mark Z. Danielewski</quote>
+        <blockquote id="quote">
+            "Passion has little to do with euphoria and 
+            everything to do with patience. It is not about feeling good. 
+            It is about endurance." - <cite>House of Leaves</cite> by Mark Z. Danielewski
+        </blockquote>
         <h3>Peruse Pages</h3>
         <svg id="down-arrow">
             <line x1="0" y1="0" x2="10" y2="10" />
@@ -46,14 +50,146 @@
         </div>
 
         <div id="about">
-            <div id="leftColumn">
-                
+            <div class="leftColumn">
+                <h4 class="sectionSubtitle">Chapter I.</h4>
+                <h4 class="sectionTitle">Behind the Code</h4>
+                <svg class="individual-separator">
+                    <line x1="0" y1="0" x2="240" y2="0" />
+                </svg>
+                <h5>
+                    With over eight years in my craft, I bridge
+                    the user's actions to the infrastructure that answers them.
+                    My work consists of refactoring old code, generating CMS ecosystems,
+                    or producing greenfield SaaS solutions.
+                </h5>
+                <p>
+                    As a solutions architect, I transcribe complex business requirements
+                    into lucid, technical frameworks that put user flow in the forefront.
+                    My specialization is adapting systems to growth and establishing
+                    a clear product to teams who inherit them.
+                </p>
+                <p>
+                    I conceptualize architectural answers through various mediums.
+                    These engagements range from solo architecture consulting to
+                    leading cross-functional teams through multi-phase delivery. With the
+                    rapid evolution of the digital landscape, I carefully consider
+                    how each piece integrates with one another, encapsulating usability with
+                    a level of flexibility only honed through high pressure environments.
+                </p>
             </div>
-            <div id="rightColumn">
+            <div class="rightColumn">
+                <img id="profile-picture" src="css\assets\profilepicture.jpg" alt="Drew Profile Picture"/>
+                <div id="stats">
+                    <div>
+                        <h3>8+</h3>
+                        <p>Years in Practice</p>
+                    </div>
+                    <div>
+                        <h3>5</h3>
+                        <p>Projects Delivered</p>
+                    </div>
+                    <div>
+                        <h3>7000+</h3>
+                        <p>Users</p>
+                    </div>
+                    <div>
+                        <h3>3</h3>
+                        <p>Core Platforms</p>
+                    </div>
+                </div>
             </div>
-            <h4 id="sectionSubtitle">Chapter I.</h4>
-            <h4 id="sectionTitle">Behind the Code</h4>
-            <p>I'm a full-stack developer with a passion for creating innovative solutions to complex problems. With experience in both front-end and back-end development, I have a strong foundation in various programming languages and frameworks. I thrive in collaborative environments and am always eager to learn and grow as a developer.</p>
-        <div>
+        </div>
+        <div class="separator">
+            <svg class="individual-separator">
+                <line x1="0" y1="0" x2="240" y2="0" />
+            </svg>
+            &#128965;
+            <svg id="right-separator-svg">
+                <line x1="0" y1="0" x2="240" y2="0" />
+            </svg>
+        </div>
+
+        <div id="work">
+            <div class="leftColumn">
+                <h4 class="sectionSubtitle">Chapter II.</h4>
+                <h4 class="sectionTitle">Fields of Study</h4>
+                <svg class="individual-separator">
+                    <line x1="0" y1="0" x2="240" y2="0" />
+                </svg>
+                <div id="studies">
+                    <div>
+                        <p>§ I</p>
+                        <h3>Frontend Development</h3>
+                        <p>Language</p>
+                    </div>
+                    <div>
+                        <p>§ II</p>
+                        <h3>Backend Development</h3>
+                        <p>Projects Delivered</p>
+                    </div>
+                    <div>
+                        <p>§ III</p>
+                        <h3>Cloud, Devops, & Infrastructure</h3>
+                        <p>Users</p>
+                    </div>
+                    <div>
+                        <p>§ IV</p>
+                        <h3>Technical Leadership & Solution Delivery</h3>
+                        <p>Core Platforms</p>
+                    </div>
+                    <div>
+                        <p>§ V</p>
+                        <h3>Platform & Tools</h3>
+                        <p>Years in Practice</p>
+                    </div>
+                    <div>
+                        <p>§ VI</p>
+                        <h3>Proficient Languages</h3>
+                        <p>Projects Delivered</p>
+                    </div>
+                    <div>
+                        <p>§ VII</p>
+                        <h3>Data Persistence</h3>
+                        <p>Users</p>
+                    </div>
+                    <div>
+                        <p>§ VIII</p>
+                        <h3>Zoho One</h3>
+                        <p>Core Platforms</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rightColumn">
+                <div id="carousel">
+                    <img class="carouselItem" 
+                         src="css\assets\screenshots\MATWebsite.png" 
+                         alt="Meeple-a-thon Website"/>
+                </div>
+                <div id="carouselNavigation">
+                    <svg id="left-navigation">
+                        <line x1="0" y1="0" x2="10" y2="10" />
+                        <line x1="10" y1="10" x2="20" y2="0" />
+                    </svg>
+                    &#11044;&nbsp;&nbsp;&nbsp;
+                    &#11044;&nbsp;&nbsp;&nbsp;
+                    &#11044;&nbsp;&nbsp;&nbsp;
+                    &#11044;&nbsp;&nbsp;&nbsp;
+                    &#11044;
+                    <svg id="right-navigation">
+                        <line x1="0" y1="0" x2="10" y2="10" />
+                        <line x1="10" y1="10" x2="20" y2="0" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="separator">
+            <svg class="individual-separator">
+                <line x1="0" y1="0" x2="240" y2="0" />
+            </svg>
+            &#128965;
+            <svg id="right-separator-svg">
+                <line x1="0" y1="0" x2="240" y2="0" />
+            </svg>
+        </div>
     </body>
 </html>

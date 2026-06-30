@@ -55,7 +55,7 @@ nav {
 }
 
 nav > h2 {
-    margin-left: 8em;
+    margin-left: 8vw;
     display: flex;
     align-items: center;
 }
@@ -64,8 +64,8 @@ nav > div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 2em;
-    margin-right: 8em;
+    gap: 2vw;
+    margin-right: 8vw;
 }
 
 a {
@@ -114,29 +114,29 @@ a {
     font-family: var(--font-body);
     font-size: .75em;
     color: var(--text-secondary);
-    margin-top: 0.2em;
+    margin-top: 0.2vw;
     height:auto;
     width: 100%;
-    gap: 2em;
+    gap: 2vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-#quote {
+blockquote {
     font-family: var(--font-body);
     font-size: 1em;
     color: var(--text-secondary);
     font-weight: 700;
-    margin-top: 1em;
-    margin-bottom: 4em;
-    max-width: 24em;
+    margin-top: 1vw;
+    margin-bottom: 4vw;
+    max-width: 24vw;
 }
 
 #arrow {
-    width: 1em;
-    height: 1em;
+    width: 1vw;
+    height: 1vw;
     animation: bounce 2s infinite;
 }
 
@@ -153,7 +153,7 @@ h3 {
     text-transform: uppercase;
 }
 
-svg {
+#down-arrow {
     width: 2em;
     height: 2em;
     margin-top: 1em;
@@ -165,45 +165,159 @@ line {
     stroke-width: 2;
 }
 
-#separator {
+.separator {
     display: flex;
     flex-direction: row;
-    align-items: top;
+    align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 0.5em;
-    margin-top: 0em;
-    margin-bottom: 0em;
     color: var(--accent);
+    gap: .5vw;
     font-size: 2em;
     width: 20%;
+    height: 2vw;
+}
+
+svg {
+    height: .1vw;
+}
+
+#about, #work {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
     height: auto;
 }
 
-#separator > svg {
+.leftColumn {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 1vw;
+    padding: 1vw;
+}
+
+.rightColumn {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1vw;
+    padding: 1vw;
+}
+
+#profile-picture {
+    height: 12vw;
+    width: 12vw;
+    border-radius: 4vw;
+}
+
+#stats, #studies {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    margin: .5vw .5vw;
+    padding: .5vw .5vw;
+}
+
+#stats > div, #studies > div {
+    margin: .5vw 0vw 0vw .5vw;
+    padding: 1vw 1vw;
+    background-color: var(--secondary);
+    color: var(--accent);
+    text-align: center;
+    border-radius: 1vw;
+    height: 1.5vw;
+    width: 6vw;
+    text-transform: uppercase;
+    border-color: var(--secondary);
+    border-width: 1px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#stats > div > h3, #stats > div > p, #studies > div > h3, #studes > div > p {
+    margin: 0;
+}
+
+#stats > div > h3, #studies > div > h3 {
+    font-size: 1.5em;
+}
+
+#stats > div > p, #studies > div > h3 {
+    padding: .2vw;
+    font-size: .75em;
+}
+
+#stats:nth-child(2), #studies > div > h3 {
+    flex-basis: 100%;
+}
+
+#studies > p {
+    font-size: .5em;
+}
+
+.carouselItem {
+    height: 20vw;
+    width: 20vw;
+}
+
+#carouselNavigation {
+    color: var(--text-secondary);
     width: 100%;
-    height: 2px;
-    margin-top: 0.75em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    font-size: 1em;
+    margin-top: 2vh;
 }
 
-#left-separator{
-    justify-self: end;
+#left-navigation {
+    width: 1vw;
+    height: 1vw;
+    rotate: 90deg;
+    margin-right: 1vw;
+    margin-top: .25vw;
+    animation: bounce 2s infinite;
 }
 
-#title, #sectionTitle {
+#right-navigation {
+    width: 1vw;
+    height: 1vw;
+    rotate: -90deg;
+    margin-top: .1vw;
+    margin-left: 1vw;
+    animation: bounce 2s infinite;
+}
+
+#title, .sectionTitle {
     font-family: var(--font-heading);
-    font-size: 5em;
-    margin-top: .1em;
-    margin-bottom: .1em;
+    font-size: 4em;
+    margin-top: .1vw;
+    margin-bottom: 1vw;
     color: var(--text--primary);
     width: 40%;
     text-shadow: 16px 16px 32px rgba(0, 0, 0, 0.5);
 }
 
-#sectionTitle {
+.sectionTitle {
     font-size: 3em;
     width: 100%;
-    margin-left: 10vh;
 }
 
 #description, #notes {
