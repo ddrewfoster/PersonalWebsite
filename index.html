@@ -6,11 +6,13 @@
         <title>Pro-Position</title>
         <meta name="description" content="Drew's coding projects and experience">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/newstyle.css">
+        <link rel="stylesheet" href="css/revisionedcss.css">
     </head>
     <body>
         <nav>
             <h2>Pro-Position</h2>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+            <label for=" nav-toggle" class="nav-icon" aria-label="Toggle navigation">&#9776;</label>
             <div id="navGroup">
                 <a href="#about">I. About</a>
                 <a href="#work">II. Work</a>
@@ -25,11 +27,11 @@
         <h1 id="title"><b>Drew Foster</b></h1>
         <div class="separator">
             <svg class="individual-separator">
-                <line x1="0" y1="0" x2="240" y2="0" />
+                <line x1="0" y1="5" x2="240" y2="5" preserveAspectRatio="none"/>
             </svg>
             &#128965;
             <svg id="right-separator-svg">
-                <line x1="0" y1="0" x2="240" y2="0" />
+                <line x1="0" y1="5" x2="240" y2="5" preserveAspectRatio="none"/>
             </svg>
         </div>
         <div id="subtitle"> 
@@ -43,7 +45,7 @@
             It is about endurance." - <cite>House of Leaves</cite> by Mark Z. Danielewski
         </blockquote>
         <h3>Peruse Pages</h3>
-        <svg id="down-arrow">
+        <svg id="down-arrow" viewBox="0 0 20 10">
             <line x1="0" y1="0" x2="10" y2="10" />
             <line x1="10" y1="10" x2="20" y2="0" />
         </svg>
@@ -53,8 +55,8 @@
             <div class="leftColumn">
                 <h4 class="sectionSubtitle">Chapter I.</h4>
                 <h4 class="sectionTitle">Behind the Code</h4>
-                <svg class="individual-separator">
-                    <line x1="0" y1="0" x2="240" y2="0" />
+                <svg class="individual-separator" viewBox="0 0 240 10" preserveAspectRatio="none">
+                    <line x1="0" y1="5" x2="240" y2="5"/>
                 </svg>
                 <h5>
                     With over eight years in my craft, I bridge
@@ -78,7 +80,7 @@
                 </p>
             </div>
             <div class="rightColumn">
-                <img id="profile-picture" src="css\assets\profilepicture.jpg" alt="Drew Profile Picture"/>
+                <img id="profile-picture" src="css/assets/profilepicture.jpg" alt="Drew Profile Picture"/>
                 <div id="stats">
                     <div>
                         <h3>8+</h3>
@@ -100,12 +102,12 @@
             </div>
         </div>
         <div class="separator">
-            <svg class="individual-separator">
-                <line x1="0" y1="0" x2="240" y2="0" />
+            <svg class="individual-separator" viewBox="0 0 240 10" preserveAspectRatio="none">
+                <line x1="0" y1="5" x2="240" y2="5" />
             </svg>
             &#128965;
-            <svg id="right-separator-svg">
-                <line x1="0" y1="0" x2="240" y2="0" />
+            <svg id="right-separator-svg" viewBox="0 0 240 10" preserveAspectRatio="none">
+                <line x1="0" y1="5" x2="240" y2="5" />
             </svg>
         </div>
 
@@ -113,72 +115,188 @@
             <div class="leftColumn">
                 <h4 class="sectionSubtitle">Chapter II.</h4>
                 <h4 class="sectionTitle">Fields of Study</h4>
-                <svg class="individual-separator">
-                    <line x1="0" y1="0" x2="240" y2="0" />
+                <svg class="individual-separator" viewBox="0 0 240 10" preserveAspectRatio="none">
+                    <line x1="0" y1="5" x2="240" y2="5" />
                 </svg>
                 <div id="studies">
                     <div>
                         <div class="title">
                             <p>§ I</p>
-                            <h3>Frontend Development</h3>
+                            <h3>Frontend</h3>
                         </div>
+                        <ul class="skills-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>React</li>
+                            <li>TypeScript</li>
+                            <li>Tailwind CSS</li>
+                            <li>Material UI</li>
+                            <li>Redux</li>
+                            <li>MobX</li>
+                            <li>React Testing</li>
+                            <li>Wordpress</li>
+                            <li>Wix</li>
+                            <li>Elemenetor/Gutenberg</li>
+                        </ul>
                         <p>Language</p>
                     </div>
                     <div>
                         <div class="title">
                             <p>§ II</p>
-                            <h3>Backend Development</h3>
+                            <h3>Backend</h3>
                         </div>
+                        <ul class="skills-list">
+                            <li>Node.js</li>
+                            <li>Java</li>
+                            <li>Kotlin</li>
+                            <li>Spring</li>
+                            <li>Spring Boot</li>
+                            <li>RESTful APIs</li>
+                            <li>GraphQL</li>
+                            <li>Apache</li>
+                            <li>PHP</li>
+                            <li>C++</li>
+                            <li>Maven</li>
+                        </ul>
                         <p>Projects Delivered</p>
                     </div>
                     <div>
                         <div class="title">
                             <p>§ III</p>
-                            <h3>Cloud, Devops, & Infrastructure</h3>
+                            <h3>Cloud</h3>
                         </div>
+                        <ul class="skills-list">
+                            <li>AWS</li>
+                            <li>Zoho One</li>
+                            <li>Pivotal Cloud Foundry</li>
+                            <li>Siteground</li>
+                            <li>Cloud Architecture</li>
+                            <li>IaC</li>
+                            <li>K8S</li>
+                        </ul>
                         <p>Users</p>
                     </div>
                     <div>
                         <div class="title">
                             <p>§ IV</p>
-                            <h3>Technical Leadership & Solution Delivery</h3>
+                            <h3>Database</h3>
                         </div>
+                        <ul class="skills-list">
+                            <li>SQL</li>
+                            <li>Flyway</li>
+                            <li>PostgreSQL</li>
+                            <li>MySQL</li>
+                        </ul>
                         <p>Core Platforms</p>
                     </div>
                     <div>
                         <div class="title">
                             <p>§ V</p>
-                            <h3>Platform & Tools</h3>
+                            <h3>DevOps</h3>
                         </div>
+                        <ul class="skills-list">
+                            <li>CI/CD</li>
+                            <li>Docker</li>
+                            <li>Ansible</li>
+                            <li>Jenkins</li>
+                            <li>Virtual Machines</li>
+                            <li>Version Control</li>
+                            <li>Github</li>
+                            <li>Gitlab</li>
+                            <li>Yarn</li>
+                            <li>Sonarqube</li>
+                            <li>Fortify</li>
+                        </ul>
                         <p>Years in Practice</p>
                     </div>
                     <div>
                         <div class="title">
                             <p>§ VI</p>
-                            <h3>Proficient Languages</h3>
+                            <h3>Security</h3>
                         </div>
+                        <ul class="skills-list">
+                            <li>OWASP</li>
+                            <li>Nmap/Zenmap</li>
+                            <li>John the Ripper</li>
+                            <li>Burp Suite</li>
+                            <li>Kali Linux</li>
+                            <li>Maltego</li>
+                            <li>OpenSSL</li>
+                            <li>Snort</li>
+                            <li>Metasploit</li>
+                            <li>Tcpdump</li>
+                            <li>Wireshark</li>
+                            <li>Hashcat</li>
+                            <li>Nessus</li>
+                            <li>Keycloak</li>
+                        </ul>
                         <p>Projects Delivered</p>
                     </div>
                     <div>
                         <div class="title">
                             <p>§ VII</p>
-                            <h3>Data Persistence</h3>
+                            <h3>Design & UX</h3>
                         </div>
+                        <ul class="skills-list">
+                            <li>Figma</li>
+                            <li>Miro</li>
+                            <li>Canva</li>
+                            <li>User Interviews</li>
+                            <li>UI/UX Design</li>
+                            <li>Trello</li>
+                        </ul>
                         <p>Users</p>
                     </div>
                     <div>
                         <div class="title">
                             <p>§ VIII</p>
-                            <h3>Zoho One</h3>
+                            <h3>Platform & Tools</h3>
                         </div>
+                        <ul class="skills-list">
+                            <li>Windows</li>
+                            <li>macOS</li>
+                            <li>Linux</li>
+                            <li>JIRA</li>
+                            <li>Kubernetes</li>
+                            <li>AWS</li>
+                            <li>Trello</li>
+                            <li>MSTeams</li>
+                            <li>Visual Studio Code</li>
+                            <li>IntelliJ IDEA</li>
+                            <li>Slack</li>
+                            <li>Discord</li>
+                            <li>RocketChat</li>
+                            <li>Atom</li>
+                            <li>Visual Studio</li>
+                            <li>ChatGPT</li>
+                            <li>Claude</li>
+                            <li>Google Analytics</li>
+                            <li>CLI</li>
+                        </ul>
                         <p>Core Platforms</p>
+                    </div>
+                    <div>
+                        <div class="title">
+                            <p>§ IX</p>
+                            <h3>Solution Delivery</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li>Agile Programming</li>
+                            <li>Extreme Programming</li>
+                            <li>Pair Programming</li>
+                            <li>Test-Driven Development</li>
+                            <li>Refactorization</li>
+                        </ul>
+                        <p>Operating Systems</p>
                     </div>
                 </div>
             </div>
             <div class="rightColumn">
                 <div id="carousel">
                     <img class="carouselItem" 
-                         src="css\assets\screenshots\MATWebsite.png" 
+                         src="css/assets/screenshots/MATWebsite.png" 
                          alt="Meeple-a-thon Website"/>
                 </div>
                 <div id="carouselNavigation">
@@ -186,11 +304,13 @@
                         <line x1="0" y1="0" x2="10" y2="10" />
                         <line x1="10" y1="10" x2="20" y2="0" />
                     </svg>
-                    &#11044;&nbsp;&nbsp;&nbsp;
-                    &#11044;&nbsp;&nbsp;&nbsp;
-                    &#11044;&nbsp;&nbsp;&nbsp;
-                    &#11044;&nbsp;&nbsp;&nbsp;
-                    &#11044;
+                    <div id="text">
+                        &#11044;&nbsp;&nbsp;&nbsp;
+                        &#11044;&nbsp;&nbsp;&nbsp;
+                        &#11044;&nbsp;&nbsp;&nbsp;
+                        &#11044;&nbsp;&nbsp;&nbsp;
+                        &#11044;
+                    </div>
                     <svg id="right-navigation">
                         <line x1="0" y1="0" x2="10" y2="10" />
                         <line x1="10" y1="10" x2="20" y2="0" />
@@ -200,11 +320,11 @@
         </div>
         <div class="separator">
             <svg class="individual-separator">
-                <line x1="0" y1="0" x2="240" y2="0" />
+                <line x1="0" y1="5" x2="240" y2="5" preserveAspectRatio="none"/>
             </svg>
             &#128965;
             <svg id="right-separator-svg">
-                <line x1="0" y1="0" x2="240" y2="0" />
+                <line x1="0" y1="5" x2="240" y2="5" preserveAspectRatio="none"/>
             </svg>
         </div>
     </body>
