@@ -211,6 +211,8 @@ h3 {
 line {
     stroke: var(--accent);
     stroke-width: 2;
+    stroke-linecap: round;
+    filter:brightness(.9);
 }
 
 .separator {
@@ -220,6 +222,7 @@ line {
     justify-content: center;
     text-align: center;
     color: var(--accent);
+    stroke-linecap: round;
     gap: .5vw;
     font-size: 1.5em;
     width: 60%;
@@ -228,9 +231,13 @@ line {
 }
 
 .separator svg {
-    height: 2px;
+    height: 8px;
     width: 100%;
     flex: 1;
+}
+
+svg {
+    color: var(--secondary);
 }
 
 #down-arrow {
@@ -249,6 +256,10 @@ line {
     height: 1.25rem;
     margin-top: .5rem;
     flex: none;
+}
+
+#left-navigation:hover, #right-navigation:hover {
+        filter: drop-shadow(0 0 5px var(--accent));
 }
 
 #left-navigation {
@@ -319,15 +330,15 @@ line {
 #stats > div, #studies > div {
     margin: 0;
     padding: 1rem;
-    background-color: var(--secondary);
-    color: var(--accent);
+    background-color: var(--surface);
+    color: var(--text-secondary);
     text-align: center;
     border-radius: 1rem;
-    height: auto;
+    height: fit-content;
     min-height: 4.5rem;
     width: calc(50% - 0.5rem);
     text-transform: uppercase;
-    border-color: var(--secondary);
+    border-color: var(--primary);
     border-width: 1px;
     border-style: solid;
     display: flex;
@@ -336,7 +347,7 @@ line {
     justify-content: center;
 }
 
-#stats > div > h3, #stats > div > p, #studies > div > h3, #studies > div > p {
+#stats > div > h3, #stats > div > p, #studies > div > ul {
     margin: 0;
 }
 
@@ -379,6 +390,7 @@ line {
 
 #carouselNavigation > #text {
     margin-top: .4rem;
+    color: var(--primary);
 }
 
 /*TITLE STYLES*/
@@ -408,6 +420,7 @@ line {
 }
 
 .title > h3 {
+    color: var(--text-primary);
     margin: 0;
 }
 
@@ -434,15 +447,70 @@ line {
     flex-direction: column;
     align-items: start;
     text-align: start;
+    padding-left: 0.5rem;
+    padding-right: .5rem;
 }
 
 #studies > div > div > p {
     min-width: 3em;
     max-width: none;
+    margin: 0;
 }
 
-#studies > div > p {
+#studies > div > ul {
     font-size: .7em;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-items: start;
+    gap: 0.5rem;
+    width: 100%;
+    text-overflow: clip;
+    padding-left: inherit;
+    flex-wrap: wrap;
+}
+
+li {
+    background-color: var(--primary);
+    border: 1px solid var(--border-primary);
+    padding: .5rem;
+    border-radius: 4px;
+}
+
+.skills-list {
+    overflow:scroll;
+    padding-top: .5rem;
+}
+
+#legend {
+    background-color: var(--surface);
+    font-size: .75em;
+    padding: .75em;
+    border-radius: 1rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--secondary);
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+#legend > h3 {
+    filter: brightness(125%);
+}
+
+#legend > ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#legend > ul > li {
+    background: none;
 }
 
 @keyframes bounce {
@@ -507,12 +575,19 @@ line {
     #about, #work {
         flex-direction: row;
         align-items: center;
-        width: 84%;
+        width: 96%;
         gap: 1vw;
     }
 
+    .leftColumn {
+        width: 60%
+    }
+
+    .rightColumn {
+        width: 40%
+    }
+
     .leftColumn, .rightColumn {
-        width: 50%;
         margin: 1vw;
         padding: 1vw;
     }
@@ -526,7 +601,7 @@ line {
     }
 
     #title, .sectionTitle {
-        width: 90%;
+        width: 96%;
     }
 }
 
@@ -544,16 +619,29 @@ line {
         display: none;
     }
 
+    .leftColumn {
+        width: 60%
+    }
+
+    .rightColumn {
+        width: 40%
+    }
+
+    .leftColumn, .rightColumn {
+        margin: 1vw;
+        padding: 1vw;
+    }
+
     #about, #work {
-        width: 80%;
+        width: 96%;
     }
 
     #stats {
-        width: 90%;
+        width: 96%;
     }
 
     #stats > div {
-        width: 12vw;
+        width: 16vw;
     }
 
     #stats:nth-child(2), #studies > div > h3 {
@@ -562,7 +650,8 @@ line {
 
     #studies > div {
         width: 45%;
-        max-height: 16vh;
+        height: fit-content;
+        max-height: 20vh;
     }
 
     #studies > div > div > p {
