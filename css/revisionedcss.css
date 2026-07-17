@@ -229,6 +229,7 @@ line {
     width: 60%;
     height: auto;
     padding: 2vh 0;
+    margin: 6vh auto;
 }
 
 .separator svg {
@@ -254,6 +255,7 @@ line {
     height: 1.25rem;
     margin-top: .5rem;
     flex: none;
+    filter: brightness(125%);
 }
 
 #left-navigation:hover, #right-navigation:hover {
@@ -294,8 +296,8 @@ line {
     gap: 2rem;
     margin-bottom: 10vh;
     padding-bottom: 10vh;
-    margin-top: 4vh;
-    padding-top: 4vh;
+    margin-top: 6vh;
+    padding-top: 6vh;
 }
 
 #contact > p {
@@ -439,7 +441,9 @@ line {
 
 #carouselNavigation {
     color: var(--text-secondary);
-    width: 100%;
+        background: var(--surface);
+    width: 40%;
+    border-radius: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -448,12 +452,14 @@ line {
     height: auto;
     font-size: 1em;
     margin-top: 2vh;
+    padding-bottom: 1vh;
     gap: .25rem;
 }
 
 #carouselNavigation > #text {
     margin-top: .4rem;
     color: var(--primary);
+    filter: brightness(125%);
 }
 
 #carouselDescription {
@@ -469,7 +475,7 @@ line {
     font-family: var(--font-heading);
     font-size: clamp(2rem, 10vw, 4rem);
     margin-top: .1em;
-    margin-bottom: .5em;
+    margin-bottom: 0;
     color: var(--text-primary);
     width: 100%;
     text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
@@ -501,7 +507,6 @@ line {
     height: 100%;
     display: flex;
     flex-direction: row;
-    margin: 0.5rem 0;
     padding: 0.5rem 0;
     flex-wrap: wrap;
     align-items: stretch;
@@ -558,14 +563,13 @@ li {
 
 #legend {
     font-size: .75em;
-    padding: .75em;
+    width: 80%;
     border-radius: 1rem;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
+    text-align: center;
     align-items: center;
-    margin-left: 2.5rem;
-    background: var(--surface);
 }
 
 #legend > h3 {
@@ -578,7 +582,8 @@ li {
 }
 
 #legend > ul > li {
-        background: var(--surface);
+        background: none;
+        border: none;
 }
 
 #legend > ul > li > svg {
