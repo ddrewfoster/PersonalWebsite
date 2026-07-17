@@ -366,7 +366,7 @@ line {
 
 .carouselItem {
     width: 100%;
-    max-width: 284px;
+    max-width: 400px;
     height: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
@@ -389,6 +389,13 @@ line {
 #carouselNavigation > #text {
     margin-top: .4rem;
     color: var(--primary);
+}
+
+#carouselDescription {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 4vh;
 }
 
 /*TITLE STYLES*/
@@ -486,8 +493,8 @@ li {
 
 #legend {
     font-size: .75em;
-    padding: .5em;
-    border-radius: .5rem;
+    padding: .75em;
+    border-radius: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -507,6 +514,35 @@ li {
 
 #legend > ul > li {
         background: var(--surface);
+}
+
+#legend > ul > li > svg {
+    color: var(--primary);
+}
+
+#legend > ul > li:nth-child(2) {
+    color: var(--text--primary);
+    opacity: .7;
+}
+
+.used-skill {
+    color: var(--primary);
+}
+
+.unused-skill {
+    color: var(--primary);
+    filter: brightness(70%);
+}
+
+.logo {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: .5rem;
+    filter: invert(67%) sepia(10%) saturate(1936%) hue-rotate(3deg) brightness(88%) contrast(88%);
+}
+
+#carouselDescription > a:hover > .logo {
+    filter: invert(67%) sepia(10%) saturate(1936%) hue-rotate(3deg) brightness(88%) contrast(88%) drop-shadow(0 0 5px var(--accent));
 }
 
 @keyframes bounce {
