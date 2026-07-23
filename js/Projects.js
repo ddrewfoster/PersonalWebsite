@@ -5,9 +5,4 @@ class Project {
         this.experience = experience;
         this.image = image;
     }
-
-    filterProjectSkills() {
-        return ":";
-    }
-
 }
