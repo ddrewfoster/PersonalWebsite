@@ -257,6 +257,7 @@ line {
     margin-top: .5rem;
     flex: none;
     filter: brightness(125%);
+    cursor: pointer;
 }
 
 #left-navigation:hover, #right-navigation:hover {
@@ -463,6 +464,11 @@ line {
     margin-top: .4rem;
     color: var(--primary);
     filter: brightness(125%);
+}
+
+#carouselNavigation > #text > span:hover {
+    filter: brightness(125%) drop-shadow(0 0 5px var(--accent));
+    cursor: pointer;
 }
 
 #carouselDescription {

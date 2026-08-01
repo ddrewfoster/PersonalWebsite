@@ -54,3 +54,32 @@ document.getElementById('left-navigation').addEventListener('click', function(){
     }
     getProject(projects[count]);
 });
+
+document.getElementById('first').addEventListener('click', function(){
+    count = 0;
+    getProject(projects[count]);
+});
+document.getElementById('second').addEventListener('click', function(){
+    count = 1;
+    getProject(projects[count]);
+});
+document.getElementById('third').addEventListener('click', function(){
+    count = 2;
+    getProject(projects[count]);
+});
+document.getElementById('fourth').addEventListener('click', function(){
+    count = 3;
+    getProject(projects[count]);
+});
+document.getElementById('fifth').addEventListener('click', function(){
+    count = 4;
+    getProject(projects[count]);
+});
+document.getElementById('sixth').addEventListener('click', function(){
+    count = 5;
+    getProject(projects[count]);
+});
+document.getElementById('seventh').addEventListener('click', function(){
+    count = 6;
+    getProject(projects[count]);
+});
