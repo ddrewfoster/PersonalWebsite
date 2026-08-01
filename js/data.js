@@ -19,19 +19,8 @@ const projects = [
                 "experience": "LED"
             }
         ],
-        "backend": [
-            {
-                "tool": "Node.js",
-                "link": "https://nodejs.org/",
-                "experience": "LED"
-            }
-        ],
+        "backend": [],
         "cloud": [
-            {
-                "tool": "Siteground",
-                "link": "https://www.siteground.com/",
-                "experience": "LED"
-            },
             {
                 "tool": "Github Pages",
                 "link": "https://pages.github.com/",
@@ -75,29 +64,29 @@ const projects = [
         ],
         "platforms": [
             {
-                "tools": "Cross-Platform",
+                "tools": "Cross-Platform (Windows/macOS/Linux)",
                 "link": "https://www.geeksforgeeks.org/blogs/native-vs-hybrid-vs-cross-platform-app-development/",
                 "experience": "LED"
             },
             {
-                "tools": "Claude",
+                "tool": "Claude",
                 "link": "https://www.anthropic.com/",
                 "experience": "LED"
             },
             {
-                "tools": "Visual Studio Code",
+                "tool": "VS Code",
                 "link": "https://code.visualstudio.com/",
                 "experience": "LED"
             },
             {
-                "tools": "CLI",
+                "tool": "CLI",
                 "link": "https://www.geeksforgeeks.org/command-line-interface-cli/",
                 "experience": "LED"
             }
         ],
         "delivery": [
             {
-                "tools": "Refactoring",
+                "tool": "Refactoring",
                 "link": "https://refactoring.guru/refactoring/what-is-refactoring",
                 "experience": "LED"
             }
@@ -182,7 +171,7 @@ const projects = [
                 "experience": "LED"
             },
             {
-                "tool": "Kubernetes",
+                "tool": "K8S",
                 "link": "https://kubernetes.io",
                 "experience":"LED"
             },
@@ -202,8 +191,8 @@ const projects = [
                 "experience": "LED"
             },
             {
-                "tool": "IAC",
-                "link": "https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac",
+                "tool": "IaC",
+                "link": "https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-IaC",
                 "experience": "LED"
             }
         ],
@@ -371,7 +360,7 @@ const projects = [
                 "experience": "LED"
             },
             {
-                "tool": "Typescript",
+                "tool": "TypeScript",
                 "link": "https://www.typescriptlang.org/",
                 "experience": "LED"
             },
@@ -430,7 +419,7 @@ const projects = [
                 "experience": "LED"
             },
             {
-                "tool": "Kubernetes",
+                "tool": "K8S",
                 "link": "https://kubernetes.io",
                 "experience":"LED"
             },
@@ -440,8 +429,8 @@ const projects = [
                 "experience": "LED"
             },
             {
-                "tool": "IAC",
-                "link": "https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac",
+                "tool": "IaC",
+                "link": "https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-IaC",
                 "experience": "LED"
             }
         ],
@@ -508,54 +497,54 @@ const projects = [
         ],
         "platforms": [
             {
-                "tools": "Cross-Platform",
+                "tool": "Cross-Platform (Windows/macOS/Linux)",
                 "link": "https://www.geeksforgeeks.org/blogs/native-vs-hybrid-vs-cross-platform-app-development/",
                 "experience": "LED"
             },
             {
-                "tools": "Apache",
+                "tool": "Apache",
                 "link": "https://httpd.apache.org/",
                 "experience": "LED"
             },
             {
-                "tools": "Intellij IDEA",
+                "tool": "IntelliJ IDEA",
                 "link": "https://www.jetbrains.com/idea/",
                 "experience": "LED"
             },
             {
-                "tools": "CLI",
+                "tool": "CLI",
                 "link": "https://www.geeksforgeeks.org/command-line-interface-cli/",
                 "experience": "LED"
             }
         ],
         "delivery": [
             {
-                "tools": "Agile",
+                "tool": "Agile",
                 "link": "https://agilemanifesto.org/",
                 "experience": "LED"
             },
             {
-                "tools": "Scrum",
+                "tool": "Scrum",
                 "link": "https://www.scrum.org/resources/what-is-scrum",
                 "experience": "LED"
             },
             {
-                "tools": "Extreme Programming",
+                "tool": "Extreme Programming",
                 "link": "https://www.agilealliance.org/glossary/xp/",
                 "experience": "LED"
             },
             {
-                "tools": "TDD",
+                "tool": "TDD",
                 "link": "https://www.agilealliance.org/glossary/tdd/",
                 "experience": "LED"
             },
             {
-                "tools": "Pair Programming",
+                "tool": "Pair Programming",
                 "link": "https://www.agilealliance.org/glossary/pairing/",
                 "experience": "LED"
             },
             {
-                "tools": "Refactoring",
+                "tool": "Refactoring",
                 "link": "https://refactoring.guru/refactoring/what-is-refactoring",
                 "experience": "LED"
             }
@@ -591,7 +580,7 @@ const projects = [
                 "experience": "LED"
             },
             {
-                "tool": "Typescript",
+                "tool": "TypeScript",
                 "link": "https://www.typescriptlang.org/",
                 "experience": "LED"
             },
@@ -650,7 +639,7 @@ const projects = [
                 "experience": "LED"
             },
             {
-                "tool": "Kubernetes",
+                "tool": "K8S",
                 "link": "https://kubernetes.io",
                 "experience":"LED"
             },
@@ -660,8 +649,8 @@ const projects = [
                 "experience": "LED"
             },
             {
-                "tool": "IAC",
-                "link": "https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac",
+                "tool": "IaC",
+                "link": "https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-IaC",
                 "experience": "LED"
             }
         ],
@@ -723,54 +712,54 @@ const projects = [
         ],
         "platforms": [
             {
-                "tools": "Cross-Platform",
+                "tool": "Cross-Platform (Windows/macOS/Linux)",
                 "link": "https://www.geeksforgeeks.org/blogs/native-vs-hybrid-vs-cross-platform-app-development/",
                 "experience": "LED"
             },
             {
-                "tools": "Apache",
+                "tool": "Apache",
                 "link": "https://httpd.apache.org/",
                 "experience": "LED"
             },
             {
-                "tools": "Intellij IDEA",
+                "tool": "IntelliJ IDEA",
                 "link": "https://www.jetbrains.com/idea/",
                 "experience": "LED"
             },
             {
-                "tools": "CLI",
+                "tool": "CLI",
                 "link": "https://www.geeksforgeeks.org/command-line-interface-cli/",
                 "experience": "LED"
             }
         ],
         "delivery": [
             {
-                "tools": "Agile",
+                "tool": "Agile",
                 "link": "https://agilemanifesto.org/",
                 "experience": "LED"
             },
             {
-                "tools": "Scrum",
+                "tool": "Scrum",
                 "link": "https://www.scrum.org/resources/what-is-scrum",
                 "experience": "LED"
             },
             {
-                "tools": "Extreme Programming",
+                "tool": "Extreme Programming",
                 "link": "https://www.agilealliance.org/glossary/xp/",
                 "experience": "LED"
             },
             {
-                "tools": "TDD",
+                "tool": "TDD",
                 "link": "https://www.agilealliance.org/glossary/tdd/",
                 "experience": "LED"
             },
             {
-                "tools": "Pair Programming",
+                "tool": "Pair Programming",
                 "link": "https://www.agilealliance.org/glossary/pairing/",
                 "experience": "LED"
             },
             {
-                "tools": "Refactoring",
+                "tool": "Refactoring",
                 "link": "https://refactoring.guru/refactoring/what-is-refactoring",
                 "experience": "LED"
             }
@@ -806,7 +795,7 @@ const projects = [
                 "experience": "LED"
             },
             {
-                "tool": "Typescript",
+                "tool": "TypeScript",
                 "link": "https://www.typescriptlang.org/",
                 "experience": "LED"
             },
@@ -880,7 +869,7 @@ const projects = [
                 "experience": "LED"
             },
             {
-                "tool": "Kubernetes",
+                "tool": "K8S",
                 "link": "https://kubernetes.io",
                 "experience":"LED"
             },
@@ -890,8 +879,8 @@ const projects = [
                 "experience": "LED"
             },
             {
-                "tool": "IAC",
-                "link": "https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac",
+                "tool": "IaC",
+                "link": "https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-IaC",
                 "experience": "LED"
             }
         ],
@@ -973,54 +962,54 @@ const projects = [
         ],
         "platforms": [
             {
-                "tools": "Cross-Platform",
+                "tool": "Cross-Platform (Windows/macOS/Linux)",
                 "link": "https://www.geeksforgeeks.org/blogs/native-vs-hybrid-vs-cross-platform-app-development/",
                 "experience": "LED"
             },
             {
-                "tools": "Visual Studio Code",
+                "tool": "VS Code",
                 "link": "https://code.visualstudio.com/",
                 "experience": "LED"
             },
             {
-                "tools": "Apache",
+                "tool": "Apache",
                 "link": "https://httpd.apache.org/",
                 "experience": "LED"
             },
             {
-                "tools": "CLI",
+                "tool": "CLI",
                 "link": "https://www.geeksforgeeks.org/command-line-interface-cli/",
                 "experience": "LED"
             }
         ],
         "delivery": [
             {
-                "tools": "Agile",
+                "tool": "Agile",
                 "link": "https://agilemanifesto.org/",
                 "experience": "LED"
             },
             {
-                "tools": "Scrum",
+                "tool": "Scrum",
                 "link": "https://www.scrum.org/resources/what-is-scrum",
                 "experience": "LED"
             },
             {
-                "tools": "Extreme Programming",
+                "tool": "Extreme Programming",
                 "link": "https://www.agilealliance.org/glossary/xp/",
                 "experience": "LED"
             },
             {
-                "tools": "TDD",
+                "tool": "TDD",
                 "link": "https://www.agilealliance.org/glossary/tdd/",
                 "experience": "LED"
             },
             {
-                "tools": "Pair Programming",
+                "tool": "Pair Programming",
                 "link": "https://www.agilealliance.org/glossary/pairing/",
                 "experience": "LED"
             },
             {
-                "tools": "Refactoring",
+                "tool": "Refactoring",
                 "link": "https://refactoring.guru/refactoring/what-is-refactoring",
                 "experience": "LED"
             }
@@ -1075,8 +1064,8 @@ const projects = [
                 "experience": "LED"
             },
             {
-                "tool": "IAC",
-                "link": "https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac",
+                "tool": "IaC",
+                "link": "https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-IaC",
                 "experience": "LED"
             }
         ],
@@ -1138,44 +1127,44 @@ const projects = [
         ],
         "platforms": [
             {
-                "tools": "Cross-Platform",
+                "tool": "Cross-Platform (Windows/macOS/Linux)",
                 "link": "https://www.geeksforgeeks.org/blogs/native-vs-hybrid-vs-cross-platform-app-development/",
                 "experience": "LED"
             },
             {
-                "tools": "Claude",
+                "tool": "Claude",
                 "link": "https://www.anthropic.com/",
                 "experience": "LED"
             },
             {
-                "tools": "Visual Studio Code",
+                "tool": "VS Code",
                 "link": "https://code.visualstudio.com/",
                 "experience": "LED"
             },
             {
-                "tools": "CLI",
+                "tool": "CLI",
                 "link": "https://www.geeksforgeeks.org/command-line-interface-cli/",
                 "experience": "LED"
             }
         ],
         "delivery": [
             {
-                "tools": "Agile",
+                "tool": "Agile",
                 "link": "https://agilemanifesto.org/",
                 "experience": "LED"
             },
             {
-                "tools": "Scrum",
+                "tool": "Scrum",
                 "link": "https://www.scrum.org/resources/what-is-scrum",
                 "experience": "LED"
             },
             {
-                "tools": "Kanban",
+                "tool": "Kanban",
                 "link": "https://www.atlassian.com/agile/kanban",
                 "experience": "LED"
             },
             {
-                "tools": "Refactoring",
+                "tool": "Refactoring",
                 "link": "https://refactoring.guru/refactoring/what-is-refactoring",
                 "experience": "LED"
             }
@@ -1243,44 +1232,44 @@ const projects = [
         ],
         "platforms": [
             {
-                "tools": "Cross-Platform",
+                "tool": "Cross-Platform (Windows/macOS/Linux)",
                 "link": "https://www.geeksforgeeks.org/blogs/native-vs-hybrid-vs-cross-platform-app-development/",
                 "experience": "LED"
             },
             {
-                "tools": "Claude",
+                "tool": "Claude",
                 "link": "https://www.anthropic.com/",
                 "experience": "LED"
             },
             {
-                "tools": "Visual Studio",
+                "tool": "Visual Studio (VS)",
                 "link": "https://visualstudio.microsoft.com/",
                 "experience": "LED"
             },
             {
-                "tools": "CLI",
+                "tool": "CLI",
                 "link": "https://www.geeksforgeeks.org/command-line-interface-cli/",
                 "experience": "LED"
             }
         ],
         "delivery": [
             {
-                "tools": "Agile",
+                "tool": "Agile",
                 "link": "https://agilemanifesto.org/",
                 "experience": "LED"
             },
             {
-                "tools": "Scrum",
+                "tool": "Scrum",
                 "link": "https://www.scrum.org/resources/what-is-scrum",
                 "experience": "LED"
             },
             {
-                "tools": "TDD",
+                "tool": "TDD",
                 "link": "https://www.agilealliance.org/glossary/tdd/",
                 "experience": "LED"
             },
             {
-                "tools": "Refactoring",
+                "tool": "Refactoring",
                 "link": "https://refactoring.guru/refactoring/what-is-refactoring",
                 "experience": "LED"
             }
@@ -1321,7 +1310,7 @@ const projects = [
                 "experience": "LED"
             },
             {
-                "tool": "Typescript",
+                "tool": "TypeScript",
                 "link": "https://www.typescriptlang.org/",
                 "experience": "LED"
             },
@@ -1388,6 +1377,11 @@ const projects = [
                 "experience": "LED"
             },
             {
+                "tool": "GraphQL",
+                "link": "https://graphql.org/",
+                "experience": "LED"
+            },
+            {
                 "tool": "PHP",
                 "link": "https://www.php.net",
                 "experience":"LED"
@@ -1405,11 +1399,6 @@ const projects = [
             {
                 "tool": "MySQL",
                 "link": "https://www.mysql.com/",
-                "experience": "LED"
-            },
-            {
-                "tool": "PostgreSQL",
-                "link": "https://www.postgresql.org/",
                 "experience": "LED"
             },
             {
@@ -1445,7 +1434,7 @@ const projects = [
                 "experience": "LED"
             },
             {
-                "tool": "Kubernetes",
+                "tool": "K8S",
                 "link": "https://kubernetes.io",
                 "experience":"LED"
             },
@@ -1465,8 +1454,8 @@ const projects = [
                 "experience": "LED"
             },
             {
-                "tool": "IAC",
-                "link": "https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac",
+                "tool": "IaC",
+                "link": "https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-IaC",
                 "experience": "LED"
             }
         ],
@@ -1623,7 +1612,7 @@ const projects = [
         ],
         "platforms": [
             {
-                "tools": "Cross-Platform",
+                "tools": "Cross-Platform (Windows/macOS/Linux)",
                 "link": "https://www.geeksforgeeks.org/blogs/native-vs-hybrid-vs-cross-platform-app-development/",
                 "experience": "LED"
             },
@@ -1633,12 +1622,12 @@ const projects = [
                 "experience": "LED"
             },
             {
-                "tools": "Visual Studio",
+                "tools": "Visual Studio (VS)",
                 "link": "https://visualstudio.microsoft.com/",
                 "experience": "LED"
             },
             {
-                "tools": "Visual Studio Code",
+                "tools": "VS Code",
                 "link": "https://code.visualstudio.com/",
                 "experience": "LED"
             },
@@ -1648,7 +1637,7 @@ const projects = [
                 "experience": "LED"
             },
             {
-                "tools": "Intellij IDEA",
+                "tools": "IntelliJ IDEA",
                 "link": "https://www.jetbrains.com/idea/",
                 "experience": "LED"
             },
