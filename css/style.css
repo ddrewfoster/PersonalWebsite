@@ -444,7 +444,7 @@ line {
 
 #carouselNavigation {
     color: var(--text-secondary);
-        background: var(--surface);
+    background: var(--surface);
     width: fit-content;
     border-radius: 1rem;
     display: flex;
