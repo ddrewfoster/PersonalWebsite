@@ -265,12 +265,14 @@ line {
 
 #left-navigation {
     rotate: 90deg;
-    margin-right: 0.5rem;
+    margin-left: 1rem;
+    margin-right: .5rem;
 }
 
 #right-navigation {
     rotate: -90deg;
-    margin-left: 0.5rem;
+    margin-right: 1rem;
+    margin-left: .5rem;
 }
 
 /*SECTION STYLES*/
@@ -443,7 +445,7 @@ line {
 #carouselNavigation {
     color: var(--text-secondary);
         background: var(--surface);
-    width: 40%;
+    width: fit-content;
     border-radius: 1rem;
     display: flex;
     flex-direction: row;
@@ -454,7 +456,7 @@ line {
     font-size: 1em;
     margin-top: 2vh;
     padding-bottom: 1vh;
-    gap: .25rem;
+    gap: .5rem;
 }
 
 #carouselNavigation > #text {

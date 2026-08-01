@@ -103,7 +103,9 @@ const projects = [
             }
         ],
         "github": "https://github.com/ddrewfoster/PersonalWebsite",
+        "githubAlt": "Personal Website GitHub",
         "link": "https://ddrewfoster.io/",
+        "websiteAlt": "Personal Website",
         "image": "css/assets/screenshots/PortfolioSite.png"
     },
     {
@@ -339,7 +341,9 @@ const projects = [
         "platforms": [],
         "delivery": [],
         "github": "https://github.com/Meeple-a-Thon/Meeple-a-thon",
+        "githubAlt": "Meeple-a-thon GitHub",
         "link": "https://meepleathon.com",
+        "websiteAlt": "Meeple-a-thon Website",
         "image": "css/assets/screenshots/MATWebsite.png"
     },
     {
@@ -557,7 +561,9 @@ const projects = [
             }
         ],
         "github": "https://github.com/RedFiveTeam/BlackPearl",
+        "githubAlt": "BlackPearl GitHub",
         "link": "",
+        "websiteAlt": "",
         "image": "css/assets/screenshots/blackpearl.png"
     },
     {
@@ -770,7 +776,9 @@ const projects = [
             }
         ],
         "github": "https://github.com/RedFiveTeam/Fritz",
+        "githubAlt": "Fritz GitHub",
         "link": "",
+        "websiteAlt": "",
         "image": "css/assets/screenshots/fritz.png"
     },
     {
@@ -1018,7 +1026,9 @@ const projects = [
             }
         ],
         "github": "https://github.com/RedFiveTeam/MagPIE",
+        "githubAlt": "MagPIE GitHub",
         "link": "",
+        "websiteAlt": "",
         "image": "css/assets/screenshots/magpie.png"
     },
     {
@@ -1276,7 +1286,9 @@ const projects = [
             }
         ],
         "github": "",
+        "githubAlt": "",
         "link": "",
+        "websiteAlt": "",
         "image": "css/assets/screenshots/moviemadness.jpg"
     },
    /* {
