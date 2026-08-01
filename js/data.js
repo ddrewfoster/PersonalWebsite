@@ -102,18 +102,213 @@ const projects = [
                 "experience": "LED"
             }
         ],
-        "github": "https://github.com/ddrewfoster/personal-website",
-        "link": "https://example.com",
-        "image": "images/personal-website.png"
+        "github": "https://github.com/ddrewfoster/PersonalWebsite",
+        "link": "https://ddrewfoster.io/",
+        "image": "css/assets/screenshots/PortfolioSite.png"
     },
     {
         "name": "Meeple-a-thon Website",
         "description": "A responsive website for the Meeple-a-thon event, showcasing games and activities.",
-        "frontend": [],
-        "backend": [],
-        "cloud": [],
-        "devops": [],
-        "security": [],
+         "frontend": [
+            {
+                "tool": "HTML", 
+                "link": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+                "experience": "LED"
+            },
+            {
+                "tool": "CSS",
+                "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+                "experience": "LED"
+            },
+            {
+                "tool": "Wordpress",
+                "link": "https://wordpress.org/",
+                "experience": "LED"
+            },
+            {
+                "tool": "Gutenberg",
+                "link": "https://wordpress.org/gutenberg/",
+                "experience": "LED"
+            }
+        ],
+        "backend": [
+            {
+                "tool": "RESTful APIs",
+                "link": "https://www.redhat.com/en/topics/api/what-is-a-rest-api",
+                "experience": "LED"
+            },
+            {
+                "tool": "PHP",
+                "link": "https://www.php.net",
+                "experience":"LED"
+            },
+            {
+                "tool":"SQL",
+                "link": "https://www.w3schools.com/sql/",
+                "experience": "LED"
+            },
+            {
+                "tool": "MySQL",
+                "link": "https://www.mysql.com/",
+                "experience": "LED"
+            }
+        ],
+        "cloud": [
+            {
+                "tool": "AWS",
+                "link": "https://aws.amazon.com/",
+                "experience": "LED"
+            },
+            {
+                "tool": "Zoho One",
+                "link": "https://www.zoho.com/one/",
+                "experience": "LED"
+            },
+            {
+                "tool": "Zoho Creator",
+                "link": "https://www.zoho.com/creator/",
+                "experience": "LED"
+            },
+            {
+                "tool": "Deluge",
+                "link": "https://www.zoho.com/deluge/",
+                "experience": "LED"
+            },
+            {
+                "tool": "Pivotal Cloud Foundry",
+                "link": "https://www.cloudfoundry.org/",
+                "experience": "LED"
+            },
+            {
+                "tool": "Kubernetes",
+                "link": "https://kubernetes.io",
+                "experience":"LED"
+            },
+            {
+                "tool": "Siteground",
+                "link": "https://www.siteground.com/",
+                "experience": "LED"
+            },
+            {
+                "tool": "Github Pages",
+                "link": "https://pages.github.com/",
+                "experience": "LED"
+            },
+            {
+                "tool": "Cloud Architecture",
+                "link": "https://www.ibm.com/think/topics/cloud-architecture",
+                "experience": "LED"
+            },
+            {
+                "tool": "IAC",
+                "link": "https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac",
+                "experience": "LED"
+            }
+        ],
+        "devops": [
+            {
+                "tool": "CI/CD",
+                "link": "https://www.redhat.com/en/topics/devops/what-is-ci-cd",
+                "experience": "LED"
+            },
+            {
+                "tool": "Docker",
+                "link": "https://www.docker.com/",
+                "experience": "LED"
+            },
+            {
+                "tool": "Ansible",
+                "link": "https://docs.ansible.com/",
+                "experience": "LED"
+            },
+            {
+                "tool": "Jenkins",
+                "link": "https://www.jenkins.io/",
+                "experience": "LED"
+            },
+            {
+                "tool": "Virtual Machines",
+                "link": "https://www.vmware.com/topics/virtual-machine",
+                "experience": "LED"
+            },
+            {
+                "tool": "Version Control",
+                "link": "https://www.atlassian.com/git/tutorials/what-is-version-control",
+                "experience": "LED"
+            },
+            {
+                "tool": "Github",
+                "link": "https://github.com/",
+                "experience": "LED"
+            },
+            {
+                "tool": "Gitlab",
+                "link": "https://about.gitlab.com/",
+                "experience": "LED"
+            },
+            {
+                "tool": "Sonarqube",
+                "link": "https://www.sonarsource.com/products/sonarqube/",
+                "experience": "LED"
+            },
+            {
+                "tool": "Bot Development",
+                "link": "https://docs.discord.com/developers/intro",
+                "experience": "LED"
+            }
+        ],
+        "security": [
+            {
+                "tool": "Keycloak",
+                "link": "https://www.keycloak.org",
+                "experience": "LED"
+            },
+            {
+                "tool": "OpenSSL",
+                "link": "https://www.openssl.org/",
+                "experience": "LED"
+            },
+            {
+                "tool": "OWASP",
+                "link": "https://owasp.org/",
+                "experience": "LED"
+            },
+            {
+                "tool": "Wireshark",
+                "link": "https://www.wireshark.org",
+                "experience": "LED"
+            },
+            {
+                "tool":"Nmap/Zenmap",
+                "link": "https://nmap.org/",
+                "experience": "LED"
+            },
+            {
+                "tool": "Burp Suite",
+                "link": "https://portswigger.net/burp",
+                "experience": "LED"
+            },
+            {
+                "tool": "Kali Linux",
+                "link": "https://www.kali.org",
+                "experience": "LED"
+            },
+            {
+                "tool": "Maltego",
+                "link": "https://www.maltego.com",
+                "experience": "LED"
+            },
+            {
+                "tool": "Snort",
+                "link": "https://snort.org/",
+                "experience": "LED"
+            },
+            {
+                "tool": "Fortify",
+                "link": "https://www.opentext.com/products/static-application-security-testing",
+                "experience": "LED"
+            }
+        ],
         "design": [
             { 
                 "tool": "Figma", 
@@ -145,7 +340,7 @@ const projects = [
         "delivery": [],
         "github": "https://github.com/Meeple-a-Thon/Meeple-a-thon",
         "link": "https://meepleathon.com",
-        "image": "images/meepleathon-website.png"
+        "image": "css/assets/screenshots/MATWebsite.png"
     },
     {
         "name": "BlackPearl",
@@ -1084,7 +1279,7 @@ const projects = [
         "link": "",
         "image": "css/assets/screenshots/moviemadness.jpg"
     },
-    {
+   /* {
         "name": "Template for a Project",
         "description": "A template for a project showcasing various technologies and tools.",
         "frontend": [
@@ -1491,5 +1686,5 @@ const projects = [
         "github": "https://github.com/Meeple-a-Thon/Meeple-a-thon",
         "link": "https://meepleathon.com",
         "image": "images/meepleathon-website.png"
-    }
+    }*/
 ]

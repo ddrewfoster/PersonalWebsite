@@ -1,22 +1,26 @@
-const things = document.getElementById('contact');  
-var location = 0;
-document.getElementById('contact').addEventListener('click', function() {
-    const dataContainer = document.getElementById('work');
-    document.getElementsByClassName("off");
-    dataContainer.innerHTML = '<p>working</p>';
-})
+var count = 0;
 
+function getProject(project) {
+    console.log(project);
+    document.getElementById('carouselItem').src = project.image;
+    document.getElementById('carouselItem').alt = project.alt;
+    return project;
+}
 
+const project = getProject(projects[count]);
 
-    async function fetchProjects() {
-        try {
-            const response = await fetch('data.js');
-            const data = await response.json();
-
-            console.log(data);
-            things.innerText = `${data}`;
-        }
-        catch(error) {
-            console.error("Failed to retrieve JSON: ", error);
-        }
+document.getElementById('right-navigation').addEventListener('click', function(){
+    count++;
+    if (count >= projects.length) {
+        count = 0;
     }
+    getProject(projects[count]);
+});
+
+document.getElementById('left-navigation').addEventListener('click', function(){
+    count--;    
+    if (count < 0) {
+        count = projects.length - 1;
+    }
+    getProject(projects[count]);
+});
